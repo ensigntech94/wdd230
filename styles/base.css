@@ -1,49 +1,42 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
-
-* {
-  margin: 0;
-  border: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
+/* import statement was moved to the normalize file so it can be read first */
 
 :root {
   --primary-color: #0f110f;
-  --secondary-color: #54341e;
-  --accent1-color: #863812;
+  --secondary-color: #362417;
+  --accent1-color: #605b59;
   --accent2-color: #fffbff;
 }
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
+  padding-top: 10px;
+}
+
+header h1 {
+  text-align: center;
+}
+
+
 
 body {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-hr {
-  border: 3px solid var(--accent1-color);
-  margin: 0 30px;
-}
-
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 30px;
-  background-color: var(--accent1-color);
-  color: var(--accent2-color);
-}
-
-header h1 {
-  margin-top: auto;
-  margin-bottom: auto;
-  padding-left: 30px;
-}
 /* Nav bar styling */
 nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px;
   background-color: var(--primary-color);
 }
 
@@ -54,38 +47,51 @@ nav a {
 }
 
 h2 {
-  padding: 20px;
   text-align: center;
+  padding-top: 20px;
 }
 
-/* card styling */
-
-.card {
+main {
   display: grid;
-  grid-template-columns: 1fr;
-  border: 2px solid var(--accent1-color);
-  border-radius: 15px;
-  margin: 30px;
+  grid-template-rows: 1fr;
+  padding: 0 30px;
 }
 
 .card h3 {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
+  border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
   background-color: var(--accent1-color);
   color: var(--accent2-color);
 }
 
-.activities {
-  margin: 20px;
+.card {
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: #362417 3px 3px 10px;
+}
+
+ol {
+  padding: 10px 40px;
 }
 
 /* footer */
-
 footer {
-  display: flex;
-  flex-direction: column;
+  margin-top: 20px;
   text-align: center;
   background-color: var(--accent1-color);
   color: var(--accent2-color);
-  padding: 60px;
+  padding: 40px;
+}
+
+@media screen and (max-width: 640px) {
+  h1,
+  h2 {
+    font-size: large;
+  }
+
+  h3 {
+    font-size: medium;
+  }
 }
