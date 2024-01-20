@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+}
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #000000;
+  --secondary-color: #afbcd4;
+  --accent1-color: #944627;
+  --accent2-color: #f0eff4;
+}
+
+header {
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 20px;
+  padding: 15px;
+  background-color: var(--secondary-color);
+  /* border: 2px black solid; */
+}
+
+h3 {
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
+  padding: 10px;
+  border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
+}
+
+h4,
+a {
+  padding: 10px;
+}
+
+p {
+  padding: 20px;
+  line-height: 1.3em;
+  letter-spacing: 0.2px;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  background-color: var(--accent2-color);
+  /* padding: 10px; */
+  border-radius: 5px;
+  /* width: 100%; */
+  height: 100%;
+  box-shadow: var(--accent1-color) 2px 2px 10px;
+}
+
+img {
+  max-width: 100%;
+  padding: 10px;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
+  padding: 20px;
+}

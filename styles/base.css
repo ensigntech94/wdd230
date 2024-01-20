@@ -2,8 +2,8 @@
 
 :root {
   --primary-color: #0f110f;
-  --secondary-color: #362417;
-  --accent1-color: #605b59;
+  --secondary-color: #5e412b;
+  --accent1-color: #944627;
   --accent2-color: #fffbff;
 }
 
@@ -24,8 +24,6 @@ header {
 header h1 {
   text-align: center;
 }
-
-
 
 body {
   max-width: 1200px;
