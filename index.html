@@ -1,50 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <meta name="author" content="Igwe Emmanuel" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Igwe Emmanuel" />
+    <meta name="description" content="course assignment portal" />
     <meta
-      name="description"
-      content="course assignment portal"
-    >
-    <meta property="og:title" content="Igwe Emmanuel - WDD 230 - Web Frontend Development">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://t3.ftcdn.net/jpg/03/59/31/68/360_F_359316888_QL4VKw3ZLdZWeHGZaajVrt6jbWQG5NsM.jpg">
-    <meta property="og:url" content="https://ensigntech94.github.io/wdd230/">
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css" >
-    <link rel="stylesheet" href="styles/larger.css">
+      property="og:title"
+      content="Igwe Emmanuel - WDD 230 - Web Frontend Development"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://t3.ftcdn.net/jpg/03/59/31/68/360_F_359316888_QL4VKw3ZLdZWeHGZaajVrt6jbWQG5NsM.jpg"
+    />
+    <meta property="og:url" content="https://heavenlyaura.github.io/wdd230/" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
     <title>
       Igwe Emmanuel - WDD 230 - Web Frontend Development
     </title>
   </head>
   <body>
     <header>
-      <div class="profile-picture"><img class="my-image" src="images/profile.jpg" alt="my picture" ></div>
+      <div class="profile-picture">
+        <img class="my-image" src="images/profile.jpg" alt="my picture" />
+      </div>
       <h1>Igwe Emmanuel</h1>
     </header>
     <nav>
-      <a href="#">Home</a>
-      <a href="lesson03/chamber-site-plan.html">Site Plan</a>
-      <a href="chamber/">Chamber</a>
-      <a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a>
-      <a
-        href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng"
-        target="_blank"
-        >Scripture</a
-      >
+      <button id="menu"></button>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+        <li><a href="chamber/">Chamber</a></li>
+        <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+        <li>
+          <a
+            href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng"
+            target="_blank"
+            >Scripture</a
+          >
+        </li>
+      </ul>
     </nav>
     <main>
       <h2>WDD 230: Web Frontend Development</h2>
-      <hr >
+      <hr />
       <section class="card">
         <h3>Learning Activities</h3>
         <ol class="activities">
-          <li><a href="lesson01/holygrail.html">Holy Grail</a> | <a href="lesson01/media-query.html">Media Query</a></li>
-          <li><a href="lesson02/design.html">Design</a> | <a href="lesson02/design-principles.html">Design Principles</a></li> 
-          <li></li>
+          <li>
+            <a href="lesson01/holygrail.html">Holy Grail</a> |
+            <a href="lesson01/media-query.html">Media Query</a>
+          </li>
+          <li>
+            <a href="lesson02/design.html">Design</a> |
+            <a href="lesson02/design-principles.html">Design Principles</a>
+          </li>
+          <li>
+            <a href="lesson03/images/css-combinator-excersise.png"
+              >CSS Combinators</a
+            >
+            |
+            <a href="https://codepen.io/Igwe-Emmanuel/pen/poYwXMV"
+              >Codepen Activity</a
+            >
+            |
+            <a href="https://codepen.io/Igwe-Emmanuel/pen/YzgQmjV"
+              >Codepen Activity 2</a
+            >
+          </li>
           <li></li>
           <li></li>
           <li></li>
@@ -59,11 +87,21 @@
         <h3>Information</h3>
         <p>Sunny 23 Degrees</p>
       </section>
+      <div class="iframe">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d84371.59729517039!2d7.282171261253809!3d9.148857368994495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1706021749332!5m2!1sen!2sng"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </main>
     <footer>
       <p id="copyright">Igwe Emmanuel, Abuja Nigeria</p>
       <p id="last-modified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/hambuger.js"></script>
   </body>
 </html>

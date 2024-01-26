@@ -2,8 +2,8 @@
 
 :root {
   --primary-color: #0f110f;
-  --secondary-color: #5e412b;
-  --accent1-color: #944627;
+  --secondary-color: #362417;
+  --accent1-color: #934020;
   --accent2-color: #fffbff;
 }
 
@@ -21,7 +21,8 @@ header {
   padding-top: 10px;
 }
 
-header h1 {
+header h1,
+.profile-picture {
   text-align: center;
 }
 
@@ -31,17 +32,60 @@ body {
 }
 
 /* Nav bar styling */
-nav {
+
+#menu {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  font-size: 1.2rem;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "❌";
+}
+
+.navigation {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--primary-color);
 }
 
-nav a {
+.navigation li {
+  list-style: none;
+  /* padding: 10px; */
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation li a {
+  display: block;
   padding: 10px;
   text-decoration: none;
   color: var(--accent2-color);
+}
+
+.navigation li a:hover {
+  background-color: white;
+  color: black;
+}
+
+.navigation li a:active::before,
+.navigation li a:active::after {
+  content: "|";
+}
+
+.open li {
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 
 h2 {
@@ -72,6 +116,19 @@ main {
 
 ol {
   padding: 10px 40px;
+}
+
+.iframe {
+  /* width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" */
+  /* height: 450px; */
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+iframe {
+  height: 400px;
+  width: 100%;
 }
 
 /* footer */

@@ -1,4 +1,19 @@
 @media screen and (min-width: 640px) {
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .navigation li {
+    display: block;
+    text-align: center;
+  }
+
+  #menu {
+    display: none;
+  }
+
   hr {
     border: 1px solid var(--accent1-color);
     grid-column: 1/3;
@@ -33,18 +48,13 @@
     text-align: left;
   }
 
+  .iframe {
+    grid-column: 1/3;
+  }
+  /* 
   nav {
     flex-direction: row;
     justify-content: space-evenly;
     padding: 0;
-  }
-
-  nav a {
-    padding: 25px;
-  }
-
-  nav a:hover {
-    background-color: #fffbff;
-    color: #0f110f;
-  }
+  } */
 }

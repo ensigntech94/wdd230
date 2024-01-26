@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff&family=Roboto&family=Rock+Salt&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-color: #0f110f;
+  --secondary-color: #362417;
+  --accent1-color: #605b59;
+  --accent2-color: #fffbff;
+
+  --heading-font: DynaPuff;
+  --paragraph-font: Roboto;
+}
+
+body {
+  max-width: 1200px;
+  padding: 10px;
+  margin: 0 auto;
+  font-family: DynaPuff, Roboto, sans-serif;
+  font-size: 19px;
+}
+
+hr {
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid var(--accent1-color);
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
+}
+
+header h1,
+header h2,
+.sitename {
+  text-decoration: none;
+  padding: 10px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading-font);
+  padding: 10px;
+  text-align: center;
+  text-decoration: underline;
+  
+}
+
+p {
+  text-align: center;
+  padding: 20px;
+  font-family: var(--paragraph-font), sans-serif;
+}
+
+.with-color {
+  background-color: var(--secondary-color);
+  color: var(--accent2-color);
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wireframe,
+.website-logo,
+.sitemap {
+  text-align: center;
+  padding: 10px;
+}
+
+.website-logo img,
+.sitemap img,
+.wireframe img {
+  width: 35%;
+}
+
+.wireframe img {
+  border: 1px solid var(--accent1-color);
+}
+
+.palette {
+  text-align: center;
+  padding: 10px;
+}
+
+.primary {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+  color: var(--accent2-color);
+}
+
+.accent1 {
+  background-color: var(--accent1-color);
+  color: var(--primary-color);
+}
+
+.accent2 {
+  background-color: var(--accent2-color);
+}
+
+table {
+  width: auto;
+  margin: 0 auto;
+}
+
+th,
+td {
+  padding: 5px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+nav {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--secondary-color);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav ul li a {
+  padding: 1.5rem;
+  text-decoration: none;
+  color: var(--accent2-color);
+}
+
+nav ul li a:hover {
+  background-color: var(--accent2-color);
+  color: var(--secondary-color);
+}
