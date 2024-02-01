@@ -1,0 +1,32 @@
+@media screen and (min-width: 800px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .introduction {
+    font-size: 2rem;
+  }
+
+  .sights img {
+    width: 25%;
+  }
+
+  .call-to-action {
+    padding: 20px;
+    font-size: large;
+    border-radius: 5px;
+  }
+
+  .hero,
+  .sights,
+  .advertisment {
+    grid-column: 1/3;
+    text-align: center;
+  }
+
+  .advertisment, .current-event, .weather-card {
+    box-shadow: 1px 1px 10px;
+  }
+}

@@ -1,0 +1,176 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #0f110f;
+  --secondary-color: #362417;
+  --accent1-color: #605b59;
+  --accent2-color: #fffbff;
+
+  --heading-font: DynaPuff;
+  --paragraph-font: Roboto;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+
+/* fonts assignments */
+p,
+a {
+  font-family: var(--paragraph-font), sans-serif;
+}
+
+h3, h1 {
+  font-family: var(--heading-font), sans-serif;
+  padding: 10px;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: var(--accent1-color);
+}
+
+/* hambuger menu */
+#menu {
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 3px;
+  background-color: var(--accent2-color);
+  color: var(--primary-color);
+  box-shadow: var(--primary-color) 1px 1px 3px;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "❌";
+}
+
+/* navigation styling */
+.navigation {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--primary-color);
+}
+
+.navigation li a {
+  display: block;
+  text-decoration: none;
+  color: var(--accent2-color);
+  padding: 15px;
+  /* border: 1px solid black; */
+}
+
+.navigation li a:hover {
+  background-color: var(--accent2-color);
+  color: var(--primary-color);
+}
+
+.navigation li {
+  display: none;
+}
+
+.open li {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+/* Hero Image and message styling*/
+.hero {
+  display: grid;
+  /* text-align: center; */
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  object-fit: contain;
+}
+
+.introduction {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  color: var(--accent2-color);
+  /* font-size: small; */
+}
+
+.introduction p {
+  padding: 0 15px;
+}
+
+/* button style */
+.call-to-action {
+  padding: 5px;
+  margin: 5px;
+}
+
+.call-to-action a {
+  text-decoration: none;
+}
+
+/* card images */
+.sights {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 1px solid black */
+}
+
+.sights img {
+  display: block;
+  margin: 10px auto;
+  width: 40%;
+  height: auto;
+  aspect-ratio: 1/1;
+  border: 1px solid black;
+}
+
+.current-event,
+.weather-card,
+.advertisment {
+  text-align: center;
+  padding: 10px;
+}
+
+/* footer */
+footer {
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  padding: 2px;
+}
+
+@media screen and (max-width: 480px) {
+  h1, h3 {
+    font-size: .9rem;
+  }
+  
+}
