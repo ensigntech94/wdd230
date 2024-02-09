@@ -21,10 +21,11 @@
 
   .sights {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   .sights img {
+
     /* display: block; */
     width: 30%;
     margin: 10px;
