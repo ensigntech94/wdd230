@@ -27,7 +27,7 @@
   </head>
   <body>
     <header>
-      <img src="images/chamber-logo.png" alt="logo" />
+      <img src="images/chamber-logo.webp" alt="logo" />
       <a href="#" id="menu"></a>
 
       <div class="toggle-container">
@@ -46,7 +46,13 @@
     </nav>
     <main class="main">
       <div class="hero">
-        <img src="images/hero-img.jpg" alt="Hero Image" />
+        <!-- <img src="images/hero-img.jpg" alt="Hero Image" /> -->
+        <picture>
+          <source media="(max-width: 500px)" srcset="images/wdd230-org-small.webp">
+          <source media="(max-width: 980px)" srcset="images/wdd230-org-medium.webp">
+          <source media="(max-width: 1000px)" srcset="images/wdd230-org-large.webp">
+          <img src="images/wdd230-org-large.webp" alt="WDD230 Organization Chart" />
+        </picture>
         <div class="introduction">
           <h1>Kubwa Chamber of Commerce</h1>
           <p>
@@ -57,9 +63,9 @@
         </div>
       </div>
       <div class="sights">
-        <img src="images/img-1.jpg" alt="image of kubwa" class="cards" />
-        <img src="images/img-2.jpg" alt="image of kubwa" class="cards" />
-        <img src="images/img-3.jpg" alt="image of kubwa" class="cards" />
+        <img src="images/img-1.webp" alt="image of kubwa" class="cards" />
+        <img src="images/img-2.webp" alt="image of kubwa" class="cards" />
+        <img src="images/img-3.webp" alt="image of kubwa" class="cards" />
       </div>
       <section class="current-event">
         <h3>current Events</h3>
@@ -78,12 +84,9 @@
       </section>
       <section class="weather-card">
         <h3>weather-card</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-          ipsa reiciendis fugit nisi magnam laboriosam, obcaecati facilis
-          impedit culpa esse! Veniam libero eaque itaque officiis culpa, porro
-          tempore delectus sint.
-        </p>
+        <p class="temperature"></p>
+        <p class="windchill"></p>
+        <p class="emoji "></p>
       </section>
       <section class="advertisment">
         <h3>Advertisment</h3>
@@ -106,6 +109,7 @@
         <a target="_blank" href="https://x.com/Emmy97933628?t=KG2FrGraP_u7zua8-hA-4A&s=09"><img src="images/twitter.png" alt="x icon" /></a>
       </div>
     </footer>
+    <script src="scripts/windchill.js"></script>
     <script src="../scripts/hambuger.js"></script>
     <script src="../scripts/getdates.js"></script>
     <script src="scripts/toggle.js"></script>
