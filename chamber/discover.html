@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Goodness Okafor" />
+    <meta
+      name="description"
+      content="This is the kubwa Chamber of Commerce Website"
+    />
+    <meta
+      property="og:title"
+      content="Goodness Arinzechukwu Okafor - WDD 230 - Web Frontend Development"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://t3.ftcdn.net/jpg/03/59/31/68/360_F_359316888_QL4VKw3ZLdZWeHGZaajVrt6jbWQG5NsM.jpg"
+    />
+    <meta property="og:url" content="https://heavenlyaura.github.io/wdd230/" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="icon" href="favicon.ico" />
+    <title>Kubwa Chamber of Commerce</title>
+  </head>
+  <body class="body-discover">
+    <header>
+      <img src="images/chamber-logo.webp" alt="logo" />
+      <a href="#" id="menu"></a>
+
+      <div class="toggle-container">
+        <label for="mytoggle" class="toggle">
+          <input type="checkbox" id="mytoggle" class="toggle-input" />
+          <span class="toggle-fill"></span>
+        </label>
+      </div>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Discover</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+    <main class="main-discover">
+      <div class="images-discover">
+        <img loading="lazy" src="images/discover-img1.webp" alt="">
+        <img loading="lazy" src="images/discover-img2.webp" alt="">
+        <img loading="lazy" src="images/discover-img3.webp" alt="">
+        <img loading="lazy" src="images/discover-img4.webp" alt="">
+        <img loading="lazy" src="images/discover-img6.webp" alt="">
+        <img loading="lazy" src="images/discover-img5.webp" alt="">
+        <!-- <img loading="lazy" src="#" alt=""> -->
+      </div>
+      <aside>
+        <div class="info-card">
+          <p class="temperature"></p>
+          <p class="windchill"></p>
+          <p class="emoji"></p>
+          <P class="visit"></P>
+        </div>
+        <div class="stats">
+          <p>
+            Kubwa is a residential district in Bwari, one of the local government areas in the Federal Capital Territory in Nigeria. It is one of the major suburbs within the metropolitan area of Abuja.[1]
+
+            The Kubwa Community has been in existence since 1990 and is considered to be the largest community in West Africa. The distance from Wuse Market to Kubwa is approximately 26 Kilometres. The Gbagi people were the original residents, but Kubwa community became an entirely new and heterogeneous community as a result of government policy on the relocation of the Gwagi people, having the three major ethnic groups Hausa, Yorubas, Igbos and other ethnic minorities as the main inhabitants of the community; they are mainly civil servants, businessmen and women, commercial motorcycle riders, artisans and entrepreneurs.[2][3][4][5]
+          </p>
+        </div>
+      </div>
+      <div class="events">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+          numquam amet omnis obcaecati quis praesentium? Vitae autem laborum
+          optio quae. Quos, voluptates nemo molestias mollitia quam sint
+          distinctio quod nam!
+        </p>
+      </aside>
+    </main>
+    
+    <footer>
+      <p id="copyright"></p>
+      <p id="last-modified"></p>
+      <p>WDD-230 Project</p>
+      <div class="icons">
+        <a href="https://www.facebook.com/eznira?mibextid=LQQJ4d"
+          ><img src="images/facebook.png" alt="facebook icon"
+        /></a>
+        <a
+          href="https://www.instagram.com/daddy.nira?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"
+          ><img src="images/instagram.png" alt="instagram icon"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/goodness-okafor-b2a993252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+          ><img src="images/linkedin.png" alt="linked icon"
+        /></a>
+        <a href="https://twitter.com/eznira_"
+          ><img src="images/twitter.png" alt="twitter icon"
+        /></a>
+      </div>
+    </footer>
+    <script src="../scripts/hambuger.js"></script>
+    <script src="../scripts/getdates.js"></script>
+    <script src="scripts/toggle.js"></script>
+    <script src="scripts/windchill.js"></script>
+  </body>
+</html>
