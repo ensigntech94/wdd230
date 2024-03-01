@@ -1,0 +1,41 @@
+:root {
+    --width: 500px;
+    --height:200px;
+    --background-color: beige;
+}
+
+
+
+.form {
+    width: var(--width);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: var(--background-color);
+}
+
+input, label{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.form p {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    color: red;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: .3rem;
+}
+
+input:focus {
+    background-color: skyblue;
+}
+
+label {
+    padding-bottom: .1rem;
+}
