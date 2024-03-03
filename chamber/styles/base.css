@@ -31,7 +31,8 @@ a {
 }
 
 h3,
-h1 {
+h1,
+h4 {
   font-family: var(--heading-font), sans-serif;
   padding: 10px;
   text-align: center;
@@ -251,9 +252,16 @@ footer p {
 }
 
 .images-discover img {
-  width: 90%;
-  height: 200px;
+  width:100% ;
+  aspect-ratio: 4/3;
+  height: auto;
   padding: 10px;
+  transition: transform 0.3s ease;
+  padding: 20px;
+}
+
+.images-discover img:hover {
+  transform: scale(1.1);
 }
 
 aside {
@@ -264,6 +272,8 @@ aside {
   gap: 20px;
   background-color: var(--accent1-color);
   margin-bottom: 20px;
+  border-radius: 10px;
+  height: auto;
 }
 
 .aside-dark div {
@@ -280,7 +290,70 @@ aside p {
   margin: 0 auto;
   box-shadow: 1px 1px 10px;
   background-color: var(--accent2-color);
+  border-radius: 10px;
 }
+
+.events {
+  padding: 10px;
+}
+
+.follow a {
+  border: 1px solid var(--accent2-color);
+  padding: .5rem;
+  border-radius: .5rem;
+  text-decoration: none;
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
+  box-shadow: 1px 1px 10px black;
+}
+
+/* join us */
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 1.5rem auto;
+}
+
+caption {
+  text-align: center;
+}
+
+input, textarea, select {
+  padding: .6rem;
+  margin-bottom: .8rem;
+}
+
+.about-us {
+  width: auto;
+  margin: 1.5rem auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.about-us p {
+  line-height: 1.6rem;
+}
+
+input:focus {
+  background-color: aliceblue;
+}
+
+.benefits {
+  text-align: center;
+  line-height: 1.4rem;
+  padding: 10px;
+  box-shadow: 1px 1px 10px;
+  margin: 10px;
+}
+
+.submission {
+  height: 50vh;
+  text-align: center;
+  padding: 20% 0;
+}
+
 
 @media screen and (max-width: 480px) {
   h1,

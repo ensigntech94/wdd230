@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Igwe Emmanuel" />
+    <meta
+      name="description"
+      content="This is the Join Us page from the kubwa chamber of Commerce"
+    />
+    <meta
+      property="og:title"
+      content="Igwe Emmanuel - WDD 230 - Web Frontend Development"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://t3.ftcdn.net/jpg/03/59/31/68/360_F_359316888_QL4VKw3ZLdZWeHGZaajVrt6jbWQG5NsM.jpg"
+    />
+    <meta property="og:url" content="https://ensigntech94.github.io/wdd230/" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="icon" href="favicon.ico" />
+    <title>Join Us</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="images/chamber-logo.webp" alt="logo" />
+      <a href="#" id="menu"></a>
+
+      <div class="toggle-container">
+        <label for="mytoggle" class="toggle">
+          <input type="checkbox" id="mytoggle" class="toggle-input" />
+          <span class="toggle-fill"></span>
+        </label>
+      </div>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="join.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <main class="joinmain">
+      <form action="thankyou.html" method="get">
+        <h3>Join Us</h3>
+        <label for="firstname">First Name: </label>
+        <input type="text" id="firstname" required name="firstname" />
+
+        <label for="lastname">Last Name: </label>
+        <input type="text" id="lastname" name="lastname" required />
+
+        <label for="position">Position</label>
+        <input
+          type="text"
+          id="position"
+          name="position"
+          pattern="[a-zA-Z\s-]{7,}"
+          required
+        />
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number: </label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="business">Business Name: </label>
+        <input type="text" required name="business" id="business" />
+
+        <label for="membership-level">Menbership Level: </label>
+        <select name="membership-level" id="membership-level">
+          <option value="blank">--select--</option>
+          <option value="npmembership">NP Membership</option>
+          <option value="bronzememebership">Bronze Membership</option>
+          <option value="silvermembership">Silver Membership</option>
+          <option value="goldmembership">Gold Membership</option>
+        </select>
+        <div class="aside">
+          <p class="benefits"></p>
+        </div>
+        <label for="description">Organization Description: </label>
+        <textarea name="description" id="description"></textarea>
+
+        <input type="hidden" name="timestamp" id="timestamp" />
+        <input type="submit" name="submit" id="submit" />
+      </form>
+
+      <div class="about-us">
+        <p>
+          Our Chamber of Commerce is dedicated to spearheading economic growth
+          and prosperity in our region. With unwavering commitment to our
+          members and the wider community, we tirelessly strive to foster
+          growth, innovation, and collaboration across businesses of all scales
+          and sectors.
+        </p>
+        <p>
+          Central to our mission is the conviction that a flourishing business
+          ecosystem is vital for the welfare of our residents and the collective
+          prosperity of our region. By fostering strategic collaborations,
+          championing advocacy initiatives, and offering a diverse array of
+          programs and services, our goal is to cultivate an atmosphere
+          conducive to business growth and enable individuals to realize their
+          utmost aspirations.
+        </p>
+        <p>
+          Our Chamber pulsates with energy, serving as a vibrant nexus where
+          entrepreneurs, professionals, and community leaders converge to swap
+          ideas, pool resources, and cultivate genuine connections. Our pledge
+          is to equip our members with the essential tools, unwavering support,
+          and abundant opportunities crucial for thriving in the constantly
+          shifting landscape of modern business.
+        </p>
+        <p>
+          By advocating for the interests of our members and supporting policies
+          that foster economic growth and prosperity, we're molding a promising
+          future for our community. Together, we're constructing a heritage of
+          achievement, creativity, and cooperation that will enrich future
+          generations.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <p id="copyright">Igwe Emmanuel &copy; 2024</p>
+      <p id="last-modified"></p>
+      <p>WDD-230 Project</p>
+      <div class="icons">
+        <a
+          target="_blank"
+          href="https://www.facebook.com/profile.php?id=100004666680045&mibextid=ZbWKwL"
+          ><img src="images/facebook.png" alt="facebook icon"
+        /></a>
+        <a
+          target="_blank"
+          href="https://www.instagram.com/igweemmanuel90?igsh=NGVhN2U2NjQ0Yg=="
+          ><img src="images/instagram.png" alt="instagram icon"
+        /></a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/emmanuel-igwe-b22518140?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          ><img src="images/linkedin.png" alt="linkedin icon"
+        /></a>
+        <a
+          target="_blank"
+          href="https://x.com/Emmy97933628?t=KG2FrGraP_u7zua8-hA-4A&s=09"
+          ><img src="images/twitter.png" alt="x icon"
+        /></a>
+      </div>
+    </footer>
+    <script src="scripts/join.js"></script>
+    <script src="../scripts/hambuger.js"></script>
+    <script src="../scripts/getdates.js"></script>
+    <script src="scripts/toggle.js"></script>
+    <script src="scripts/windchill.js"></script>
+  </body>
+</html>
