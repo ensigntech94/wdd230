@@ -354,10 +354,99 @@ input:focus {
   padding: 20% 0;
 }
 
+/* Directory Page */
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.grid-button, .list-button {
+  display: flex;
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin: 0;
+}
+
+.grid .name {
+  display: none;
+}
+
+.list div:nth-child(odd) {
+  background-color: #ddd;
+} 
+
+.darkmode .layout.list div:nth-child(odd){
+  color: #0f110f;
+}
+
+.layout.list div {
+  transition: none;
+  text-align: start;
+  box-shadow: none;
+  border: none;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr;
+}
+
+.layout.list div:hover {
+  transform: none;
+}
+
+.layout.list img {
+  display: none;
+}
+
+.layout.list p {
+  width: 90%;
+}
+
+.layout {
+  padding: 1rem;
+  width: 100%;
+}
+
+.layout div {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 1px 1px 9px;
+  transition: transform 0.5s ease;
+}
+
+.layout div:hover {
+  transform: scale(1.1);
+}
+
 
 @media screen and (max-width: 480px) {
   h1,
   h3 {
     font-size: 0.9rem;
   }
+}
+
+@media screen and (max-width: 800px) {
+ .layout.list div {
+  grid-template-columns: 1fr;
+ }
+
+ .layout.list p,a {
+  width: auto;
+  padding: .4rem;
+ }
 }
