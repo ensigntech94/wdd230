@@ -2,35 +2,35 @@
     "company": [
         {
             "name" : "MTN",
-            "logo" : "https://raw.githubusercontent.com/ensigntech94/wdd230/faaef059a1f47aef667b726944f3e7f8465a186f/chamber/data/images/mtn.png",
+            "logo" : "https://github.com/ensigntech94/wdd230/blob/main/chamber/data/images/mtn.png?raw=true",
             "address" : "MTN Plaza, No 1, Awolowo Road, Falomo, Ikoyi, Lagos            ",
             "contact": "+234 903 300 0001",
             "website": "https://www.mtn.ng/"
         },
         {
             "name" : "Innoson Vehicle",
-            "logo" : "https://raw.githubusercontent.com/ensigntech94/wdd230/faaef059a1f47aef667b726944f3e7f8465a186f/chamber/data/images/ivm.jpeg",
+            "logo" : "https://github.com/ensigntech94/wdd230/blob/main/chamber/data/images/ivm.jpeg?raw=true",
             "address" : "IVM Service Center, Lekki/ Ajah express Way, After Cosharis Ibeju Lekki",
             "contact": "+234 704 908 7160",
             "website": "https://www.innosonvehicles.com/"
         },
         {
             "name" : "Nestle",
-            "logo" : "https://raw.githubusercontent.com/ensigntech94/wdd230/faaef059a1f47aef667b726944f3e7f8465a186f/chamber/data/images/nestle.png",
+            "logo" : "https://github.com/ensigntech94/wdd230/blob/main/chamber/data/images/nestle.png?raw=true",
             "address" : "Nigeria Nestlé Nigeria PLC Industrial Avenue 22-24 Ilupeju, Lagos Nigeria",
             "contact": "+234 1 279 0707",
             "website": "https://www.nestle.com/"
         },
         {
             "name" : "House of Chi",
-            "logo" : "https://raw.githubusercontent.com/ensigntech94/wdd230/faaef059a1f47aef667b726944f3e7f8465a186f/chamber/data/images/houseofchi.jpeg",
+            "logo" : "https://github.com/ensigntech94/wdd230/blob/main/chamber/data/images/houseofchi.jpeg?raw=true",
             "address" : "Chi Limited No 14, Chivita Avenue Ajao Estate - Lagos NIGERIA",
             "contact": "+234 903 387 2113",
             "website": "https://chihollandia.com/contact/"
         },
         {
             "name" : "Airtel",
-            "logo" : "https://github.com/ensigntech94/wdd230/blob/faaef059a1f47aef667b726944f3e7f8465a186f/chamber/data/images/airtel.png?raw=true",
+            "logo" : "https://raw.githubusercontent.com/ensigntech94/wdd230/main/chamber/data/images/airtel.png",
             "address" : "Plot L2 Banana Island, Foreshore Estate, Ikoyi Lagos, Nigeria.",
             "contact": "+234 8021500300 ",
             "website": "https://www.airtel.com.ng/"
@@ -44,7 +44,7 @@
         },
         {
             "name" : "Power Oil",
-            "logo" : "https://raw.githubusercontent.com/ensigntech94/wdd230/faaef059a1f47aef667b726944f3e7f8465a186f/chamber/data/images/power-oil.png",
+            "logo" : "https://github.com/ensigntech94/wdd230/blob/main/chamber/data/images/power-oil.png?raw=true",
             "address" : "Plot 44, Jimoh Odutola Street Off Eric Moore Road Iganmu Industrial Estate Surulere, Lagos",
             "contact": "+234 908 999 5358",
             "website": "https://poweroil.com.ng/"
