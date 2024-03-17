@@ -252,7 +252,7 @@ footer p {
 }
 
 .images-discover img {
-  width:100% ;
+  width: 100%;
   aspect-ratio: 4/3;
   height: auto;
   padding: 10px;
@@ -283,9 +283,11 @@ aside {
 aside p {
   padding: 20px;
   line-height: 1.3rem;
-}   
+}
 
-.info-card, .stats, .events {
+.info-card,
+.stats,
+.events {
   width: 90%;
   margin: 0 auto;
   box-shadow: 1px 1px 10px;
@@ -299,8 +301,8 @@ aside p {
 
 .follow a {
   border: 1px solid var(--accent2-color);
-  padding: .5rem;
-  border-radius: .5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
   text-decoration: none;
   background-color: var(--accent1-color);
   color: var(--accent2-color);
@@ -320,9 +322,11 @@ caption {
   text-align: center;
 }
 
-input, textarea, select {
-  padding: .6rem;
-  margin-bottom: .8rem;
+input,
+textarea,
+select {
+  padding: 0.6rem;
+  margin-bottom: 0.8rem;
 }
 
 .about-us {
@@ -363,7 +367,8 @@ input:focus {
   padding-bottom: 1rem;
 }
 
-.grid-button, .list-button {
+.grid-button,
+.list-button {
   display: flex;
   width: 100px;
   height: 50px;
@@ -387,9 +392,9 @@ input:focus {
 
 .list div:nth-child(odd) {
   background-color: #ddd;
-} 
+}
 
-.darkmode .layout.list div:nth-child(odd){
+.darkmode .layout.list div:nth-child(odd) {
   color: #0f110f;
 }
 
@@ -432,6 +437,26 @@ input:focus {
   transform: scale(1.1);
 }
 
+.current-event,
+.card,
+.advertisment {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+
+.advertisment {
+  position: relative;
+  display: none;
+}
+
+.close {
+  position: absolute;
+  cursor: pointer;
+  top: 1.4rem;
+  right: 1rem;
+  font-size: 0.8rem;
+}
 
 @media screen and (max-width: 480px) {
   h1,
@@ -441,12 +466,13 @@ input:focus {
 }
 
 @media screen and (max-width: 800px) {
- .layout.list div {
-  grid-template-columns: 1fr;
- }
+  .layout.list div {
+    grid-template-columns: 1fr;
+  }
 
- .layout.list p,a {
-  width: auto;
-  padding: .4rem;
- }
+  .layout.list p,
+  a {
+    width: auto;
+    padding: 0.4rem;
+  }
 }
