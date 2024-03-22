@@ -30,7 +30,6 @@ function displayLinks(weeks) {
             aTag.textContent = `${title} - Week: ${lesson}`
             console.log(url)
             console.log(title)
-
             li.appendChild(aTag)
             list.appendChild(li)
         });
