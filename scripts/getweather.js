@@ -2,19 +2,24 @@ const temperature = document.querySelector(".temperature");
 const description = document.querySelector(".description");
 const city = document.querySelector('.city')
 const emoji = document.querySelector(".emoji");
-const apiKey = "";
+const apiKey = "7a8363f78b4734d0e0c68ee8e7742838";
 
-if ("geolocation" in navigator) {
-    navigator.geolocation.getCurrentPosition((position) => {
-        const latitude = position.coords.latitude;
-        const longitude = position.coords.longitude;
-        const apiKey = "7a8363f78b4734d0e0c68ee8e7742838"; // OpenWeatherMap API key
-        const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
-        getWeather(url);
-    });
-} else {
-    console.log("lll");
-}
+// if ("geolocation" in navigator) {
+//     navigator.geolocation.getCurrentPosition((position) => {
+//         const latitude = position.coords.latitude;
+//         const longitude = position.coords.longitude;
+//         const apiKey = "7a8363f78b4734d0e0c68ee8e7742838"; // OpenWeatherMap API key
+//         const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+//         getWeather(url);
+//     });
+// } else {
+//     console.log("lll");
+// }
+
+let cityy = "Kubwa";
+let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityy}&appid=${apiKey}&units=metric`;
+
+getWeather(url)
 
 async function getWeather(url) {
 
