@@ -1,0 +1,182 @@
+@media screen and (min-width: 642px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem; /* 50.56px */
+  }
+
+  h3 {
+    font-size: 1.3rem; /* 37.92px */
+  }
+
+  h4 {
+    font-size: 1.1rem; /* 28.48px */
+  }
+
+  h5 {
+    font-size: 1.333rem;
+  }
+
+  small {
+    font-size: 0.75rem; /* 12px */
+  }
+
+  .nav-bar {
+    display: flex;
+    position: static;
+    background-color: inherit;
+    flex-direction: row;
+    height: 0;
+    padding: 1rem;
+    align-items: center;
+    border: none;
+    margin-right: 10px;
+    width: 120%;
+  }
+
+  .nav-bar li {
+    padding: 0;
+  }
+
+  .nav-bar li a {
+    padding: 10px 1rem;
+    text-decoration: none;
+    position: relative;
+  }
+
+  .nav-bar li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: width 0.3s ease;
+    background-color: black;
+    text-align: center;
+  }
+
+  .nav-bar li a:hover::after {
+    width: 100%;
+    background-color: white;
+  }
+
+  .nav-bar li a:active::after {
+    width: 100%;
+  }
+
+  header {
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .hero {
+    position: relative;
+    height: 100%;
+  }
+
+  .welcome-img {
+    position: relative;
+    /* transform: scaleX(-1); */
+    margin-top: 0;
+    /* border: 1px solid black; */
+  }
+
+  .welcome-img img {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    animation: slideInFromRight 1s ease-in forwards;
+  }
+
+  .welcome {
+    position: absolute;
+    top: 30rem;
+    left: 4rem;
+    font-size: large;
+    animation: slideInFromLeft 1s ease-in forwards;
+  }
+
+  .hambuger {
+    display: none;
+  }
+
+  .contain-hero {
+    height: 900px;
+  }
+
+  .display-1 {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .display-1 img {
+    width: 90%;
+    transition: 0.7s;
+  }
+
+  .display-1 img:hover {
+    transform: scale(1.2);
+  }
+
+  .blog {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .extra-info {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  /* Contact Us Page */
+
+  .contact-form form {
+    margin: 1rem auto;
+    padding: 3rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+  }
+
+  .contact-form form input,
+  textarea {
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+  }
+
+  .contact-form textarea {
+    margin-bottom: 1rem;
+  }
+
+  .contact-form submit {
+    width: 1rem;
+  }
+
+  /* Reservation Page */
+
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+}

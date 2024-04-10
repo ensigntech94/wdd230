@@ -1,0 +1,56 @@
+@media screen and (min-width: 1000px) {
+  
+  .welcome {
+    font-size: xx-large;
+    top: 30rem;
+    left: 2rem;
+  }
+
+  .welcome-img {
+    margin-top: 0;
+    /* border: 1px solid black; */
+  }
+
+  .welcome-img img {
+    width: 65%;
+    /* transform: scaleX(-1); */
+  }
+
+  /* Reservation Page */
+
+  .reservations-main input,
+  .reservations-main select,
+  .reservations-main textarea {
+    width: 100%;
+    margin: 0;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form {
+    /* border: 1px solid black; */
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .drive-in {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    transform: scaleX(-1);
+    /* border: 1px solid black; */
+  }
+
+  .drive-in img {
+    width: 80%;
+    animation: slideInFromLeft 1s ease-in forwards;
+  }
+
+  .contact-form form {
+    width: 50%;
+  } 
+}

@@ -1,0 +1,87 @@
+{
+    "Rentals": [
+        {
+            "Type" : "~Honda Metro Scooter",
+            "MaxPersons" : "1",
+            "Reservations" : {
+                "halfDay" : "$20",
+                "fullDay" : "$30"
+            },
+            "Walkin" : {
+                "halfDay" : "$25",
+                "fullDay" : "$35"
+            },
+            "image" : "images/rental-1"
+        },
+
+        {
+            "Type" : "~Honda Dio Scooter",
+            "MaxPersons" : "2",
+            "Reservations" : {
+                "halfDay" : "$30",
+                "fullDay" : "$40"
+            },
+            "Walkin" : {
+                "halfDay" : "$35",
+                "fullDay" : "$45"
+            },
+            "image" : "images/rental-2"
+        },
+
+        {
+            "Type" : "~Honda PCX150 Scooter",
+            "MaxPersons" : "2",
+            "Reservations" : {
+                "halfDay" : "$40",
+                "fullDay" : "$50"
+            },
+            "Walkin" : {
+                "halfDay" : "$55",
+                "fullDay" : "$55"
+            },
+            "image" : "images/rental-3"
+        },
+
+        {
+            "Type" : "Honda Pioneer ATV",
+            "MaxPersons" : "4",
+            "Reservations" : {
+                "halfDay" : "$50",
+                "fullDay" : "$70"
+            },
+            "Walkin" : {
+                "halfDay" : "$60",
+                "fullDay" : "$80"
+            },
+            "image" : "images/rental-4"
+        },
+
+        {
+            "Type" : "Jeep Wrangler - 4 door with a/c",
+            "MaxPersons" : "5",
+            "Reservations" : {
+                "halfDay" : "$70",
+                "fullDay" : "$100"
+            },
+            "Walkin" : {
+                "halfDay" : "$85",
+                "fullDay" : "$125"
+            },
+            "image" : "images/rental-5"
+        },
+
+        {
+            "Type" : "Jeep Wrangler - 2 door",
+            "MaxPersons" : "4",
+            "Reservations" : {
+                "halfDay" : "$60",
+                "fullDay" : "$85"
+            },
+            "Walkin" : {
+                "halfDay" : "$70",
+                "fullDay" : "$90"
+            },
+            "image" : "images/rental-6"
+        }
+    ]
+}
